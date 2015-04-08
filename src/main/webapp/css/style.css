@@ -1,0 +1,39 @@
+.location {
+	position: absolute;
+}
+
+.location .label {
+	position: absolute;
+	top: -5px;
+	font-weight: bold;
+}
+
+.location .connection {
+	position: absolute;
+	left: 15px;
+	height: 1px;
+	background-color: #000000;
+	width: 20px;
+	font-weight: bold;
+}
+
+.location .start {
+	background-color: #0A0;
+}
+
+.location .start:before {
+	content: "Start";
+}
+
+.background {
+	position: absolute;
+	z-index: -10;
+	width:110%;
+	height: 150%;
+	top: -18%;
+	left:-12%;
+}
+
+.window {
+	overflow: hidden;
+}

@@ -1,0 +1,32 @@
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<zk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zkoss.org/2005/zul/zul.xsd"  xmlns:h="native">
+	<style src="css/style.css"/>
+	
+	<script type="text/javascript">
+	
+		var initialized = false;
+	
+		function drawLine(x1,y1,x2,y2) {
+			var board = document.getElementsByClassName("window")[0];
+			var boardHeight = board.offsetHeight;
+			var boardWidth = board.offsetWidth;
+			var canvas = document.getElementById("canvas");
+			if(!initialized) {
+				canvas.height = boardHeight;
+				canvas.width = boardWidth;
+				initialized = true;
+			}
+			var ctx = canvas.getContext("2d");
+			ctx.beginPath()
+			ctx.moveTo(boardWidth / 100 * x1 + 7, boardHeight / 100 * y1 + 7);
+			ctx.lineTo(boardWidth / 100 * x2 + 7, boardHeight / 100 * y2 + 7);
+			ctx.closePath();
+			ctx.stroke();
+		}
+	</script>
+	
+	<div height="100%" width="100%" apply="de.javachr1s.routes.controller.MapController" sclass="window">
+		<h:img src="images/map_bg.png" class="background"/>
+		<h:canvas id="canvas"/>
+	</div>
+</zk>

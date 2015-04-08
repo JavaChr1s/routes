@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="board" class="de.javachr1s.routes.data.Board">
+		<constructor-arg name="x" value="55" />
+		<constructor-arg name="y" value="28" />
+	</bean>
+
+	<bean id="montreal" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="11" />
+		<constructor-arg name="y" value="6" />
+		<constructor-arg name="name" value="Montreal" />
+		<property name="connections">
+			<list>
+				<ref bean="washington"/>
+				<ref bean="newyork"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="washington" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="13" />
+		<constructor-arg name="y" value="9" />
+		<constructor-arg name="name" value="Washington" />
+		<property name="connections">
+			<list>
+				<ref bean="montreal"/>
+				<ref bean="newyork"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="london" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="22" />
+		<constructor-arg name="y" value="4" />
+		<constructor-arg name="name" value="London" />
+		<property name="connections">
+			<list>
+				<ref bean="newyork"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="newyork" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="14" />
+		<constructor-arg name="y" value="7" />
+		<constructor-arg name="name" value="New York" />
+		<property name="connections">
+			<list>
+				<ref bean="montreal"/>
+				<ref bean="washington"/>
+				<ref bean="london"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="atlanta" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="9" />
+		<constructor-arg name="y" value="9" />
+		<constructor-arg name="name" value="Atlanta" />
+		<property name="connections">
+			<list>
+				<ref bean="washington"/>
+				<ref bean="chicago"/>
+				<ref bean="miami"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="chicago" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="8" />
+		<constructor-arg name="y" value="6" />
+		<constructor-arg name="name" value="Chicago" />
+		<property name="connections">
+			<list>
+				<ref bean="montreal"/>
+				<ref bean="atlanta"/>
+				<ref bean="sanfrancisco"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="miami" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="11" />
+		<constructor-arg name="y" value="12" />
+		<constructor-arg name="name" value="Miami" />
+		<property name="connections">
+			<list>
+				<ref bean="atlanta"/>
+				<ref bean="washington"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="sanfrancisco" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="3" />
+		<constructor-arg name="y" value="7" />
+		<constructor-arg name="name" value="San Francisco" />
+		<property name="connections">
+			<list>
+				<ref bean="chicago"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="mexicocity" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="7" />
+		<constructor-arg name="y" value="13" />
+		<constructor-arg name="name" value="Mexico City" />
+		<property name="connections">
+			<list>
+				<ref bean="miami"/>
+				<ref bean="chicago"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="losangeles" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="4" />
+		<constructor-arg name="y" value="11" />
+		<constructor-arg name="name" value="Los Angeles" />
+		<property name="connections">
+			<list>
+				<ref bean="sanfrancisco"/>
+				<ref bean="mexicocity"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="bogota" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="10.5" />
+		<constructor-arg name="y" value="16" />
+		<constructor-arg name="name" value="Bogota" />
+		<property name="connections">
+			<list>
+				<ref bean="miami"/>
+				<ref bean="mexicocity"/>
+				<ref bean="lima"/>
+				<ref bean="saopaulo"/>
+				<ref bean="buenosaires"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="lima" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="8.5" />
+		<constructor-arg name="y" value="20" />
+		<constructor-arg name="name" value="Lima" />
+		<property name="connections">
+			<list>
+				<ref bean="mexicocity"/>
+				<ref bean="santiago"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="buenosaires" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="13" />
+		<constructor-arg name="y" value="23.5" />
+		<constructor-arg name="name" value="Buenos Aires" />
+		<property name="connections">
+			<list>
+				<ref bean="saopaulo"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="saopaulo" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="15" />
+		<constructor-arg name="y" value="20.5" />
+		<constructor-arg name="name" value="Sao Paulo" />
+		<property name="connections">
+			<list>
+				<ref bean="madrid"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="santiago" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="9" />
+		<constructor-arg name="y" value="24.5" />
+		<constructor-arg name="name" value="Santiago" />
+		<property name="connections">
+			<list>
+				<ref bean="lima"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="madrid" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="21.5" />
+		<constructor-arg name="y" value="8.25" />
+		<constructor-arg name="name" value="Madrid" />
+		<property name="connections">
+			<list>
+				<ref bean="london"/>
+				<ref bean="newyork"/>
+			</list>
+		</property>
+	</bean>
+
+
+</beans>
