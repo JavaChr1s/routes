@@ -41,7 +41,6 @@ public class RouteUtil {
 
 	private static List<Location> calculateRouteInternal(final Location start, final Location destination, final int maxLength) {
 		final List<Location> route = new ArrayList<Location>();
-		System.out.println("max length " + maxLength);
 		checkLocation(start, destination, route, new HashSet<Location>(), maxLength, 0);
 		return route;
 	}
