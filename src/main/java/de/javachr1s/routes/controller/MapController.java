@@ -17,6 +17,7 @@ import org.zkoss.zul.Messagebox;
 
 import de.javachr1s.routes.data.Board;
 import de.javachr1s.routes.data.Location;
+import de.javachr1s.routes.util.RouteUtil;
 
 /**
  * @author Chris
@@ -87,7 +88,8 @@ public class MapController extends GenericForwardComposer<Div> {
 		}
 
 		private void calculatePath(final Location start, final Location destination) {
-			Messagebox.show("ToDo...");
+			final List<Location> route = RouteUtil.calculateShortestRoute(start, destination);
+			Messagebox.show(String.format("Route:\n%s\n\nSteps: %s", route.toString(), route.size()));
 		}
 		
 	}

@@ -51,4 +51,9 @@ public class Location {
 	public void addConnection(final Location connection) {
 		connections.add(connection);
 	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
 }
