@@ -14,7 +14,7 @@
 	</bean>
 
 	<bean id="montreal" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="11" />
+		<constructor-arg name="x" value="16" />
 		<constructor-arg name="y" value="6" />
 		<constructor-arg name="name" value="Montreal" />
 		<property name="connections">
@@ -26,7 +26,7 @@
 	</bean>
 
 	<bean id="washington" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="13" />
+		<constructor-arg name="x" value="18" />
 		<constructor-arg name="y" value="9" />
 		<constructor-arg name="name" value="Washington" />
 		<property name="connections">
@@ -38,8 +38,8 @@
 	</bean>
 
 	<bean id="london" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="22" />
-		<constructor-arg name="y" value="4" />
+		<constructor-arg name="x" value="25.5" />
+		<constructor-arg name="y" value="5" />
 		<constructor-arg name="name" value="London" />
 		<property name="connections">
 			<list>
@@ -49,8 +49,8 @@
 	</bean>
 
 	<bean id="newyork" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="14" />
-		<constructor-arg name="y" value="7" />
+		<constructor-arg name="x" value="18.5" />
+		<constructor-arg name="y" value="6.3" />
 		<constructor-arg name="name" value="New York" />
 		<property name="connections">
 			<list>
@@ -62,8 +62,8 @@
 	</bean>
 
 	<bean id="atlanta" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="9" />
-		<constructor-arg name="y" value="9" />
+		<constructor-arg name="x" value="14" />
+		<constructor-arg name="y" value="8.5" />
 		<constructor-arg name="name" value="Atlanta" />
 		<property name="connections">
 			<list>
@@ -75,7 +75,7 @@
 	</bean>
 
 	<bean id="chicago" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="8" />
+		<constructor-arg name="x" value="13" />
 		<constructor-arg name="y" value="6" />
 		<constructor-arg name="name" value="Chicago" />
 		<property name="connections">
@@ -88,8 +88,8 @@
 	</bean>
 
 	<bean id="miami" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="11" />
-		<constructor-arg name="y" value="12" />
+		<constructor-arg name="x" value="16" />
+		<constructor-arg name="y" value="10.8" />
 		<constructor-arg name="name" value="Miami" />
 		<property name="connections">
 			<list>
@@ -100,7 +100,7 @@
 	</bean>
 
 	<bean id="sanfrancisco" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="3" />
+		<constructor-arg name="x" value="8" />
 		<constructor-arg name="y" value="7" />
 		<constructor-arg name="name" value="San Francisco" />
 		<property name="connections">
@@ -111,8 +111,8 @@
 	</bean>
 
 	<bean id="mexicocity" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="7" />
-		<constructor-arg name="y" value="13" />
+		<constructor-arg name="x" value="12" />
+		<constructor-arg name="y" value="11" />
 		<constructor-arg name="name" value="Mexico City" />
 		<property name="connections">
 			<list>
@@ -123,8 +123,8 @@
 	</bean>
 
 	<bean id="losangeles" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="4" />
-		<constructor-arg name="y" value="11" />
+		<constructor-arg name="x" value="9.5" />
+		<constructor-arg name="y" value="10" />
 		<constructor-arg name="name" value="Los Angeles" />
 		<property name="connections">
 			<list>
@@ -135,8 +135,8 @@
 	</bean>
 
 	<bean id="bogota" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="10.5" />
-		<constructor-arg name="y" value="16" />
+		<constructor-arg name="x" value="15.5" />
+		<constructor-arg name="y" value="13" />
 		<constructor-arg name="name" value="Bogota" />
 		<property name="connections">
 			<list>
@@ -150,8 +150,8 @@
 	</bean>
 
 	<bean id="lima" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="8.5" />
-		<constructor-arg name="y" value="20" />
+		<constructor-arg name="x" value="14.5" />
+		<constructor-arg name="y" value="16" />
 		<constructor-arg name="name" value="Lima" />
 		<property name="connections">
 			<list>
@@ -162,8 +162,8 @@
 	</bean>
 
 	<bean id="buenosaires" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="13" />
-		<constructor-arg name="y" value="23.5" />
+		<constructor-arg name="x" value="18.5" />
+		<constructor-arg name="y" value="19" />
 		<constructor-arg name="name" value="Buenos Aires" />
 		<property name="connections">
 			<list>
@@ -173,8 +173,8 @@
 	</bean>
 
 	<bean id="saopaulo" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="15" />
-		<constructor-arg name="y" value="20.5" />
+		<constructor-arg name="x" value="21" />
+		<constructor-arg name="y" value="16.5" />
 		<constructor-arg name="name" value="Sao Paulo" />
 		<property name="connections">
 			<list>
@@ -184,8 +184,8 @@
 	</bean>
 
 	<bean id="santiago" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="9" />
-		<constructor-arg name="y" value="24.5" />
+		<constructor-arg name="x" value="15.5" />
+		<constructor-arg name="y" value="19.5" />
 		<constructor-arg name="name" value="Santiago" />
 		<property name="connections">
 			<list>
@@ -195,13 +195,82 @@
 	</bean>
 
 	<bean id="madrid" class="de.javachr1s.routes.data.Location">
-		<constructor-arg name="x" value="21.5" />
-		<constructor-arg name="y" value="8.25" />
+		<constructor-arg name="x" value="26" />
+		<constructor-arg name="y" value="7.25" />
 		<constructor-arg name="name" value="Madrid" />
 		<property name="connections">
 			<list>
 				<ref bean="london"/>
 				<ref bean="newyork"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="lagos" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="27.5" />
+		<constructor-arg name="y" value="12.5" />
+		<constructor-arg name="name" value="Lagos" />
+		<property name="connections">
+			<list>
+				<ref bean="saopaulo"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="kinshasa" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="29.5" />
+		<constructor-arg name="y" value="14.5" />
+		<constructor-arg name="name" value="Kinshasa" />
+		<property name="connections">
+			<list>
+				<ref bean="lagos"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="johannesburg" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="31" />
+		<constructor-arg name="y" value="18.5" />
+		<constructor-arg name="name" value="Johannesburg" />
+		<property name="connections">
+			<list>
+				<ref bean="kinshasa"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="khartoum" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="31.5" />
+		<constructor-arg name="y" value="12" />
+		<constructor-arg name="name" value="Khartoum" />
+		<property name="connections">
+			<list>
+				<ref bean="kinshasa"/>
+				<ref bean="johannesburg"/>
+				<ref bean="lagos"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="cairo" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="31.5" />
+		<constructor-arg name="y" value="9" />
+		<constructor-arg name="name" value="Cairo" />
+		<property name="connections">
+			<list>
+				<ref bean="khartoum"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="algiers" class="de.javachr1s.routes.data.Location">
+		<constructor-arg name="x" value="28" />
+		<constructor-arg name="y" value="8.5" />
+		<constructor-arg name="name" value="Algiers" />
+		<property name="connections">
+			<list>
+				<ref bean="cairo"/>
+				<ref bean="madrid"/>
 			</list>
 		</property>
 	</bean>
